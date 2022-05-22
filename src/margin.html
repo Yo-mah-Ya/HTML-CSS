@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- Margin collapsing -->
+        <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/margin#margin_collapsing -->
+        <div class="box-container">
+            <div class="box01">box1</div>
+            <div class="box02">box2</div>
+        </div>
+        <style>
+            /* Margin collapsing */
+            div.box-container {
+                /* background: yellow; */
+                text-align: center;
+            }
+            .box01,
+            .box02 {
+                width: 150px;
+            }
+            .box01 {
+                margin-bottom: 20px;
+                background: lightblue;
+            }
+            .box02 {
+                margin-top: 10px;
+                background: pink;
+            }
+        </style>
+    </body>
+</html>

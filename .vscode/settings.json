@@ -1,0 +1,52 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "node_modules": true,
+    "npm-packages-offline-cache": true,
+    "dist": true,
+    "coverage": true
+  },
+  "editor.formatOnSave": true,
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "eslint.packageManager": "yarn",
+  "eslint.validate": ["javascript", "typescript"],
+  "eslint.lintTask.enable": true,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "npm.packageManager": "yarn",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "[css]": {
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.stylelint": true
+    }
+  },
+  "[scss]": {
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.stylelint": true
+    }
+  },
+  "cSpell.enabled": true,
+  "cSpell.words": [
+    "avif",
+    "browserslist",
+    "formdata",
+    "msapplication",
+    "nocheck",
+    "opensearch",
+    "preconnect",
+    "prefetch",
+    "stylelint"
+  ],
+  "[xml]": {
+    "editor.defaultFormatter": "DotJoshJohnson.xml"
+  }
+}

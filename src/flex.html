@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+        </div>
+        <style>
+            /* https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox */
+            /* https://www.webcreatorbox.com/tech/css-flexbox-cheat-sheet#flexbox9 */
+            .container {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                /*
+                You can specify "flex-direction, flex-wrap" all-in-one.
+                flex-flow: row wrap;
+                */
+                justify-content: start;
+                align-content: flex-start;
+                align-items: flex-start;
+                align-content: stretch;
+            }
+
+            .item {
+                justify-self: auto;
+                align-self: auto;
+
+                /*
+                base width of flex items.
+				You can specify width like property width
+                If you specify "auto" with flex items, the its own size will be applied by default.
+
+                flex-basis: 50%;
+                */
+
+                /*
+                You can specify "flex-grow, flex-shrink, flex-basis" all-in-one.
+				default: 0 1 auto。
+                */
+                flex: 0 1 50%;
+            }
+        </style>
+    </body>
+</html>

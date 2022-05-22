@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/sass.js/0.10.7/sass.sync.min.js"></script>
+        <script src="https://unpkg.com/@neos21/in-browser-sass@1.0.2/in-browser-sass.min.js"></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="main1">test1</div>
+        <p class="p1">aaa</p>
+        <p class="p2">bbb</p>
+
+        <!-- nested -->
+        <div class="main2">
+            <div class="sub1">sub1</div>
+            <div class="sub2">sub2</div>
+        </div>
+        <div class="footer">footer</div>
+        <style>
+            .main1 {
+                float: left;
+                height: 70px;
+                width: 200px;
+                border: 1px solid #000;
+                background-color: #e0ffff;
+                text-align: center;
+            }
+            .p2 {
+                clear: left;
+            }
+            /* nested */
+            .main2 {
+                /* the way of "overflow: hidden" */
+                overflow: hidden;
+                width: 200px;
+                background-color: #e0ffff;
+            }
+            /* the way of clearfix */
+            .main2::after {
+                content: "";
+                clear: both;
+                display: block;
+            }
+            .sub1 {
+                float: left;
+                width: 70%;
+                height: 100px;
+                background: AntiqueWhite;
+            }
+            .sub2 {
+                float: right;
+                width: 25%;
+                background: AntiqueWhite;
+            }
+            .footer {
+                width: 200px;
+                background: LightSalmon;
+            }
+        </style>
+    </body>
+</html>

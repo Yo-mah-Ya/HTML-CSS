@@ -1,0 +1,3 @@
+[submodule "src/CodeSnippets"]
+	path = src/CodeSnippets
+	url = https://github.com/JulioCodesSM/CodeSnippets.git
